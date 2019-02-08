@@ -1,0 +1,56 @@
+
+.secondary-doctors {
+  background: #0b0706 url(../img/bg-doctors.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: $orange;
+  background-blend-mode: multiply;
+  color: #fff;
+  padding: 3em calc(50% - 600px);
+  position: relative;
+  z-index: 1;
+}
+
+.elm-doctors {
+	display: flex;
+	flex-direction: column;
+
+	&__doctor {
+		display: flex;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #CCC;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+
+		@media screen and (max-width: 600px) {
+			flex-direction: column;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: flex;
+			align-self: flex-start;
+			@media screen and (max-width: 600px) {
+				margin-bottom: 10px;
+			}
+		}
+
+		&__info {
+			margin-left: 20px;
+			@media screen and (max-width: 600px) {
+				margin: 0;
+			}
+
+			h3 {
+				color: $yellow;
+				font-family: 'Lora', serif;
+				font-size: 1.5rem;
+				line-height: 1;
+				margin: 0;
+				text-align: left;
+			}
+		}
+	}
+}

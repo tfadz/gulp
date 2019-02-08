@@ -1,0 +1,80 @@
+// Slick Slider
+
+.elm-slider {
+  position: relative;
+
+  .slick-next {
+    background: url(img/next-arrow.svg) no-repeat;
+    background-size: 40px;
+    height: 60px;
+    opacity: .5;
+    right: 20px;
+    width: 50px;
+  }
+
+  .slick-prev {
+    background: url(img/prev-arrow.svg) no-repeat;
+    background-size: 40px;
+    height: 60px;
+    left: 20px;
+    opacity: .5;
+    width: 50px;
+    z-index: 2;
+  }
+}
+
+.elm-slide {
+  height: 500px;
+  position: relative;
+  width: 100%;
+
+  @media screen and (max-width: 800px) {
+    height: 413px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 172px;
+  }
+
+  &__title {
+    background: rgba(255, 255, 255, 0.5);
+    bottom: 28px;
+    left: 0;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding: 15px 30px 15px 30px;
+    position: absolute;
+    text-transform: uppercase;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  bottom: -30px;
+
+  @media screen and (max-width: 800px) {
+    padding-right: 20px;
+  }
+
+  li {
+    button {
+      border-radius: 50%;
+      border: 1px solid #555555;
+      box-shadow: none;
+      height: 10px;
+      margin: 0 2px;
+      width: 10px;
+
+      &:before {
+        content: none;
+      }
+    }
+
+    &.slick-active button {
+      border: 1px solid #CCC;
+    }
+  }
+}
