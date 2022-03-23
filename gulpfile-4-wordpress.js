@@ -43,7 +43,7 @@ function browser() {
   });
 
   watch('sass/**/*.scss', css);
-  watch('js/theme/*.js', js);
+  watch('./js/theme/*.js', js);
 }
 
 exports.css = css;
